@@ -11,6 +11,10 @@ border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
 border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cswj6"]
 bg_color = Color(0.058524936, 0.4033603, 0, 1)
