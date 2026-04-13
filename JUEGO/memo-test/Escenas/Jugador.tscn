@@ -1,0 +1,319 @@
+[gd_scene format=3 uid="uid://b5oxblnd5mf1"]
+
+[ext_resource type="Script" uid="uid://djsa4v6k7egas" path="res://Escenas/jugador.gd" id="1_rkn32"]
+[ext_resource type="Texture2D" uid="uid://bsdaxk13vjcps" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_0.png" id="1_xsu1a"]
+[ext_resource type="Texture2D" uid="uid://busjs715jrtrx" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_1.png" id="2_1340j"]
+[ext_resource type="Texture2D" uid="uid://cidelegang85j" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_2.png" id="3_g735c"]
+[ext_resource type="Texture2D" uid="uid://c0rly0sl0ck3b" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_3.png" id="4_3le5i"]
+[ext_resource type="Texture2D" uid="uid://k16baff4dspf" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_4.png" id="5_ldqfe"]
+[ext_resource type="Texture2D" uid="uid://crcqeyj0sk6sv" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_5.png" id="6_5d76g"]
+[ext_resource type="Texture2D" uid="uid://221srrwjccbc" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_6.png" id="7_sb2or"]
+[ext_resource type="Texture2D" uid="uid://crdq4dharcka5" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/S/warrior_armed_walk_S_270.0_7.png" id="8_v8mjx"]
+[ext_resource type="Texture2D" uid="uid://b6t4pt6kfmvek" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_0.png" id="9_2c0fp"]
+[ext_resource type="Texture2D" uid="uid://bb8ngtdjs8h65" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_0.png" id="9_3xpwh"]
+[ext_resource type="Texture2D" uid="uid://t7vapfo00ejp" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_0.png" id="9_6cjin"]
+[ext_resource type="Texture2D" uid="uid://cf30t08jy1r0n" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_1.png" id="10_q4s4l"]
+[ext_resource type="Texture2D" uid="uid://botab70ry241g" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_1.png" id="10_rkn32"]
+[ext_resource type="Texture2D" uid="uid://ca36mng86353j" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_1.png" id="10_uamxh"]
+[ext_resource type="Texture2D" uid="uid://d7swbkg5lr5b" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_2.png" id="11_11bkf"]
+[ext_resource type="Texture2D" uid="uid://dcx6nlt6gn6hr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_2.png" id="11_361ip"]
+[ext_resource type="Texture2D" uid="uid://bobshpnvxitt7" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_2.png" id="11_qno7t"]
+[ext_resource type="Texture2D" uid="uid://c856ywgxdr7b3" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_3.png" id="12_8nmji"]
+[ext_resource type="Texture2D" uid="uid://butfo7osg7qiv" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_3.png" id="12_c06m1"]
+[ext_resource type="Texture2D" uid="uid://3vnmpsq02dj2" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_3.png" id="12_hxljk"]
+[ext_resource type="Texture2D" uid="uid://d36nbaeqq1uwo" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_4.png" id="13_31k2h"]
+[ext_resource type="Texture2D" uid="uid://bduy3sho8efkw" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_4.png" id="13_n8buv"]
+[ext_resource type="Texture2D" uid="uid://d3nphgyqcrfi" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_4.png" id="13_rxxvx"]
+[ext_resource type="Texture2D" uid="uid://ddfg857yb8ey4" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_5.png" id="14_iqwwu"]
+[ext_resource type="Texture2D" uid="uid://coxmxdg2spf3e" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_5.png" id="14_jjne1"]
+[ext_resource type="Texture2D" uid="uid://h0vcepdduqd5" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_5.png" id="14_udp75"]
+[ext_resource type="Texture2D" uid="uid://dv3n7ixi2vlj5" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_6.png" id="15_0xscd"]
+[ext_resource type="Texture2D" uid="uid://hq6soli2lv8y" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_6.png" id="15_o3ftr"]
+[ext_resource type="Texture2D" uid="uid://c213yt8dra53s" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_6.png" id="15_x5nqs"]
+[ext_resource type="Texture2D" uid="uid://deqdm8sd57k5l" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/N/warrior_armed_walk_N_90.0_7.png" id="16_h20h5"]
+[ext_resource type="Texture2D" uid="uid://7ac0cgc7w3cb" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/W/warrior_armed_walk_W_180.0_7.png" id="16_ny14v"]
+[ext_resource type="Texture2D" uid="uid://dtjyf4mbdgwpa" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSE/warrior_armed_walk_SSE_292.5_7.png" id="16_oiijs"]
+[ext_resource type="Texture2D" uid="uid://bbl8hhwe3dc67" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_0.png" id="17_kh1sm"]
+[ext_resource type="Texture2D" uid="uid://dkhr0sck4bk8j" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_0.png" id="17_q86vp"]
+[ext_resource type="Texture2D" uid="uid://bp4u4njtu60pk" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_1.png" id="18_exihx"]
+[ext_resource type="Texture2D" uid="uid://viyisvgkm6n1" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_1.png" id="18_ytkha"]
+[ext_resource type="Texture2D" uid="uid://3mfhniouvct8" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_2.png" id="19_66uux"]
+[ext_resource type="Texture2D" uid="uid://dmh3ph3ro3j76" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_2.png" id="19_s3vth"]
+[ext_resource type="Texture2D" uid="uid://c7at4vqxh5o2g" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_3.png" id="20_rfhdp"]
+[ext_resource type="Texture2D" uid="uid://cuwk2viqou4u5" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_3.png" id="20_wf4fn"]
+[ext_resource type="Texture2D" uid="uid://cfi7do78c5nhk" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_4.png" id="21_60hde"]
+[ext_resource type="Texture2D" uid="uid://dnt8bhsqa4inp" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_4.png" id="21_dh8fa"]
+[ext_resource type="Texture2D" uid="uid://b3ph3q5tnongh" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_5.png" id="22_6xnnk"]
+[ext_resource type="Texture2D" uid="uid://b0ycq8l0p4pet" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_5.png" id="22_wjh3m"]
+[ext_resource type="Texture2D" uid="uid://dky65gmdbxnfq" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_6.png" id="23_25b21"]
+[ext_resource type="Texture2D" uid="uid://cuuidgiuws8jw" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_6.png" id="23_x7mld"]
+[ext_resource type="Texture2D" uid="uid://bw7cfdss8ospj" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/SSW/warrior_armed_walk_SSW_247.5_7.png" id="24_rh5as"]
+[ext_resource type="Texture2D" uid="uid://3tme7w3ye1dk" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NNE/warrior_armed_walk_NNE_67.5_7.png" id="24_wpujg"]
+[ext_resource type="Texture2D" uid="uid://bf1pn5iptxy8w" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_0.png" id="25_3xpwh"]
+[ext_resource type="Texture2D" uid="uid://bccc0pqly8ovo" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_1.png" id="26_rkn32"]
+[ext_resource type="Texture2D" uid="uid://2dop20qdjpld" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_2.png" id="27_qno7t"]
+[ext_resource type="Texture2D" uid="uid://mvultos3c6l4" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_3.png" id="28_hxljk"]
+[ext_resource type="Texture2D" uid="uid://cnv1bsuioqopr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_4.png" id="29_n8buv"]
+[ext_resource type="Texture2D" uid="uid://w88cio6h6mrq" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_5.png" id="30_udp75"]
+[ext_resource type="Texture2D" uid="uid://chvwovq6gy82v" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_6.png" id="31_o3ftr"]
+[ext_resource type="Texture2D" uid="uid://bw0u03o4iylka" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/NWW/warrior_armed_walk_NWW_157.5_7.png" id="32_oiijs"]
+[ext_resource type="Texture2D" uid="uid://br020dfme0lgx" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_0.png" id="33_q86vp"]
+[ext_resource type="Texture2D" uid="uid://bksjapl5pjhub" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_1.png" id="34_exihx"]
+[ext_resource type="Texture2D" uid="uid://bn3h83g5wf8h" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_2.png" id="35_66uux"]
+[ext_resource type="Texture2D" uid="uid://coe21gnkb4mh0" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_3.png" id="36_rfhdp"]
+[ext_resource type="Texture2D" uid="uid://csia3s2uycd55" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_4.png" id="37_dh8fa"]
+[ext_resource type="Texture2D" uid="uid://cyl5ju3boquu3" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_5.png" id="38_wjh3m"]
+[ext_resource type="Texture2D" uid="uid://c3bjwqy36pdvo" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_6.png" id="39_x7mld"]
+[ext_resource type="Texture2D" uid="uid://bg26ntp4rsplr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_7.png" id="40_rh5as"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhmvs"]
+size = Vector2(19, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b4gol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xsu1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1340j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g735c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3le5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ldqfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5d76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sb2or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v8mjx")
+}],
+"loop": true,
+"name": &"caminarAbajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_3xpwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rkn32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qno7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hxljk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_n8buv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_udp75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_o3ftr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_oiijs")
+}],
+"loop": true,
+"name": &"caminarAbajoDer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_q86vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_exihx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_66uux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rfhdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dh8fa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wjh3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_x7mld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_rh5as")
+}],
+"loop": true,
+"name": &"caminarAbajoIzq",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_6cjin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uamxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_11bkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8nmji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rxxvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iqwwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0xscd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_h20h5")
+}],
+"loop": true,
+"name": &"caminarArriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_kh1sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ytkha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s3vth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wf4fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_60hde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6xnnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_25b21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_wpujg")
+}],
+"loop": true,
+"name": &"caminarArribaDer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_3xpwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_rkn32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_qno7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hxljk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_n8buv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_udp75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_o3ftr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_oiijs")
+}],
+"loop": true,
+"name": &"caminarArribaIzq",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_q86vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_exihx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_66uux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_rfhdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_dh8fa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_wjh3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_x7mld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_rh5as")
+}],
+"loop": true,
+"name": &"caminarDer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_2c0fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_q4s4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_361ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_c06m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_31k2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jjne1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x5nqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ny14v")
+}],
+"loop": true,
+"name": &"caminarIzq",
+"speed": 5.0
+}]
+
+[node name="Jugador" type="CharacterBody2D" unique_id=378067887]
+script = ExtResource("1_rkn32")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2069762750]
+position = Vector2(201.5, 45)
+shape = SubResource("RectangleShape2D_uhmvs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=894600999]
+position = Vector2(202, 57)
+sprite_frames = SubResource("SpriteFrames_b4gol")
+animation = &"caminarAbajoIzq"
+frame = 4
+frame_progress = 0.3730704
