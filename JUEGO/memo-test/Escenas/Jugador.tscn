@@ -65,6 +65,10 @@
 [ext_resource type="Texture2D" uid="uid://cyl5ju3boquu3" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_5.png" id="38_wjh3m"]
 [ext_resource type="Texture2D" uid="uid://c3bjwqy36pdvo" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_6.png" id="39_x7mld"]
 [ext_resource type="Texture2D" uid="uid://bg26ntp4rsplr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_walk/E/warrior_armed_walk_E_0.0_7.png" id="40_rh5as"]
+[ext_resource type="Texture2D" uid="uid://di4rcd60mlpii" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_idle/S/warrior_armed_idle_S_270.0_0.png" id="58_6xnnk"]
+[ext_resource type="Texture2D" uid="uid://7lcbsdf71mfr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_idle/N/warrior_armed_idle_N_90.0_0.png" id="58_s3vth"]
+[ext_resource type="Texture2D" uid="uid://bisxex355sidr" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_idle/E/warrior_armed_idle_E_0.0_0.png" id="60_25b21"]
+[ext_resource type="Texture2D" uid="uid://cv1c8t547j57r" path="res://assets/(DEMO) Lords Of Pain - Old School Isometric Assets/playable character/warrior/warrior_armed_idle/W/warrior_armed_idle_W_180.0_0.png" id="61_wpujg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uhmvs"]
 size = Vector2(19, 42)
@@ -97,7 +101,7 @@ animations = [{
 "texture": ExtResource("8_v8mjx")
 }],
 "loop": true,
-"name": &"caminarAbajo",
+"name": &"caminar_Abajo",
 "speed": 5.0
 }, {
 "frames": [{
@@ -126,7 +130,7 @@ animations = [{
 "texture": ExtResource("16_oiijs")
 }],
 "loop": true,
-"name": &"caminarAbajoDer",
+"name": &"caminar_AbajoDer",
 "speed": 5.0
 }, {
 "frames": [{
@@ -155,7 +159,7 @@ animations = [{
 "texture": ExtResource("24_rh5as")
 }],
 "loop": true,
-"name": &"caminarAbajoIzq",
+"name": &"caminar_AbajoIzq",
 "speed": 5.0
 }, {
 "frames": [{
@@ -184,7 +188,7 @@ animations = [{
 "texture": ExtResource("16_h20h5")
 }],
 "loop": true,
-"name": &"caminarArriba",
+"name": &"caminar_Arriba",
 "speed": 5.0
 }, {
 "frames": [{
@@ -213,7 +217,7 @@ animations = [{
 "texture": ExtResource("24_wpujg")
 }],
 "loop": true,
-"name": &"caminarArribaDer",
+"name": &"caminar_ArribaDer",
 "speed": 5.0
 }, {
 "frames": [{
@@ -242,7 +246,7 @@ animations = [{
 "texture": ExtResource("32_oiijs")
 }],
 "loop": true,
-"name": &"caminarArribaIzq",
+"name": &"caminar_ArribaIzq",
 "speed": 5.0
 }, {
 "frames": [{
@@ -271,7 +275,7 @@ animations = [{
 "texture": ExtResource("40_rh5as")
 }],
 "loop": true,
-"name": &"caminarDer",
+"name": &"caminar_Der",
 "speed": 5.0
 }, {
 "frames": [{
@@ -300,7 +304,39 @@ animations = [{
 "texture": ExtResource("16_ny14v")
 }],
 "loop": true,
-"name": &"caminarIzq",
+"name": &"caminar_Izq",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_6xnnk")
+}],
+"loop": true,
+"name": &"quieto_Abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_s3vth")
+}],
+"loop": true,
+"name": &"quieto_Arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_25b21")
+}],
+"loop": true,
+"name": &"quieto_Der",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_wpujg")
+}],
+"loop": true,
+"name": &"quieto_Izq",
 "speed": 5.0
 }]
 
@@ -314,6 +350,4 @@ shape = SubResource("RectangleShape2D_uhmvs")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=894600999]
 position = Vector2(202, 57)
 sprite_frames = SubResource("SpriteFrames_b4gol")
-animation = &"caminarAbajoIzq"
-frame = 4
-frame_progress = 0.3730704
+animation = &"caminar_AbajoDer"

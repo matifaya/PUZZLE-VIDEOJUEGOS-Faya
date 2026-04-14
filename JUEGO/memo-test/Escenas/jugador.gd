@@ -1,25 +1,43 @@
 extends CharacterBody2D
 
+@onready var animated_sprite = $AnimatedSprite2D
+var speed = 100.0
+var last_direction = "Abajo"
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+func _physics_process(delta):
+	get_input()
 	move_and_slide()
+
+func get_input():
+	var input_dir = Input.get_vector("left", "right", "upw", "downs")
+	
+	if input_dir == Vector2.ZERO:
+		velocity = Vector2.ZERO
+		update_animation("quieto")
+		return
+	
+	var dir_horizontal = ""
+	var dir_vertical = ""
+	
+	if input_dir.x > 0.1:
+		dir_horizontal = "Der"
+	elif input_dir.x < -0.1:
+		dir_horizontal = "Izq"
+		
+	if input_dir.y > 0.1:
+		dir_vertical = "Abajo"
+	elif input_dir.y < -0.1:
+		dir_vertical = "Arriba"
+		
+	if dir_horizontal != "" and dir_vertical != "":
+		last_direction = dir_vertical + dir_horizontal
+	elif dir_horizontal != "":
+		last_direction = dir_horizontal
+	elif dir_vertical != "":
+		last_direction = dir_vertical
+
+	update_animation("caminar")
+	velocity = input_dir * speed
+
+func update_animation(state):
+	animated_sprite.play(state + "_" + last_direction)
