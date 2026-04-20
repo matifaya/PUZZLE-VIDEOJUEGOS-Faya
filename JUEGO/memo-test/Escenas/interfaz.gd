@@ -3,7 +3,7 @@ extends Control
 
 
 func _on_jugar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Escenas/Jugador.tscn")
+	get_tree().change_scene_to_file("res://Escenas/mapa_1.tscn")
 
 
 func _on_salir_pressed() -> void:

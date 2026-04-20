@@ -341,13 +341,18 @@ animations = [{
 }]
 
 [node name="Jugador" type="CharacterBody2D" unique_id=378067887]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_rkn32")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2069762750]
-position = Vector2(201.5, 45)
+position = Vector2(-0.87270737, -0.3939209)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_uhmvs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=894600999]
-position = Vector2(202, 57)
+position = Vector2(-0.87270737, -0.3939209)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_b4gol")
 animation = &"caminar_AbajoDer"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=375026503]
