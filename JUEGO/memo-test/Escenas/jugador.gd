@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-var speed = 100.0
+var speed = 150.0
 var last_direction = "Abajo"
 
 func _physics_process(delta):
