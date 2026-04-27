@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://wh4i0v5quj3a"]
+
+[ext_resource type="Texture2D" uid="uid://d32jpa5bl4mxk" path="res://Escenas/victoria.png" id="1_1um40"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ther"]
+bg_color = Color(0.047058824, 0.17254902, 0.105882354, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.047058824, 0.17254902, 0.105882354, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qte02"]
+bg_color = Color(0.058524936, 0.4033603, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 0.78431374)
+
+[node name="Victoria" type="Control" unique_id=1791116473]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [538.0, 608.0]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=747529724]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.67947364, 0.69997543)
+texture = ExtResource("1_1um40")
+
+[node name="Salir" type="Button" parent="TextureRect" unique_id=897018465]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -387.84933
+offset_top = -159.8302
+offset_right = -87.849304
+offset_bottom = -59.8302
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1, 0.9952137)
+theme_override_colors/font_color = Color(0.80784315, 0.59607846, 0.23137255, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ther")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qte02")
+text = "SIGUIENTE
+NIVEL"
+
+[node name="Salir2" type="Button" parent="TextureRect" unique_id=1144320224]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 65.44275
+offset_top = -156.97296
+offset_right = 365.44275
+offset_bottom = -59.843933
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1, 0.9952137)
+theme_override_colors/font_color = Color(0.80784315, 0.59607846, 0.23137255, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ther")
+text = "SALIR"

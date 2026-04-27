@@ -6,7 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://bsxoyye8ijy2j" path="res://assets/2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/torch_2.png" id="4_cgr68"]
 [ext_resource type="Script" uid="uid://h8u25ru6f4h1" path="res://Escenas/torch_2.gd" id="5_3pqkn"]
 [ext_resource type="Texture2D" uid="uid://bv3d5e6qmhnld" path="res://assets/spr_portal_strip8.png" id="5_kg8wq"]
+[ext_resource type="Script" uid="uid://cm83lt2rf8ouh" path="res://Escenas/llave.gd" id="6_vbroh"]
 [ext_resource type="Script" uid="uid://din6vmpuwvgwj" path="res://Escenas/antorcha.gd" id="6_xjaa0"]
+[ext_resource type="Script" uid="uid://m5ufaw7xalcb" path="res://Escenas/puerta.gd" id="8_mq54h"]
+[ext_resource type="Script" uid="uid://btx5pinj6p27p" path="res://Escenas/hud.gd" id="10_mq54h"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vbroh"]
 
@@ -419,16 +422,19 @@ tile_size = Vector2i(80, 80)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_24khr")
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3pqkn"]
-
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_35if1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3pqkn"]
 radius = 3.3333435
 height = 12.536072
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_35if1"]
-size = Vector2(81, 127)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pqkn"]
+size = Vector2(29, 76)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3pqkn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq54h"]
+size = Vector2(98, 131)
 
 [sub_resource type="Gradient" id="Gradient_udp75"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -438,6 +444,9 @@ gradient = SubResource("Gradient_udp75")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyaee"]
+size = Vector2(98, 133.5)
 
 [node name="Mapa1" type="Node2D" unique_id=639666208]
 
@@ -452,12 +461,6 @@ tile_set = SubResource("TileSet_66p5n")
 [node name="Jugador" parent="." unique_id=378067887 instance=ExtResource("2_24khr")]
 position = Vector2(-2407, -288)
 
-[node name="Keys13" type="Sprite2D" parent="." unique_id=95646383]
-material = SubResource("CanvasItemMaterial_3pqkn")
-position = Vector2(366, 757)
-scale = Vector2(2.1781583, 1.7893336)
-texture = ExtResource("3_35if1")
-
 [node name="Torch2" type="Sprite2D" parent="." unique_id=1523612351]
 material = SubResource("CanvasItemMaterial_35if1")
 position = Vector2(432, -646.25)
@@ -467,30 +470,74 @@ script = ExtResource("5_3pqkn")
 
 [node name="Area2D" type="Area2D" parent="Torch2" unique_id=2072684319 node_paths=PackedStringArray("llave_objetivo")]
 script = ExtResource("6_xjaa0")
-llave_objetivo = NodePath("../../Keys13")
+llave_objetivo = NodePath("../../Llave/Keys13")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Torch2/Area2D" unique_id=1183191418]
 position = Vector2(0, 0.7422675)
 shape = SubResource("CapsuleShape2D_3pqkn")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=31888269]
-position = Vector2(-1080, -1183)
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1923824134]
+visible = false
+color = Color(0, 0, 0, 1)
+
+[node name="Llave" type="Area2D" parent="." unique_id=2006506526]
+position = Vector2(325.69836, 698.30566)
+script = ExtResource("6_vbroh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Llave" unique_id=666843030]
+position = Vector2(-3.2503662, -1.514801)
+shape = SubResource("RectangleShape2D_3pqkn")
+
+[node name="Keys13" type="Sprite2D" parent="Llave" unique_id=95646383]
+material = SubResource("CanvasItemMaterial_3pqkn")
+position = Vector2(-4.0000305, 2.9999695)
+scale = Vector2(2.1781583, 1.7893336)
+texture = ExtResource("3_35if1")
+
+[node name="Puerta" type="Area2D" parent="." unique_id=982158961]
+position = Vector2(59, 76)
+script = ExtResource("8_mq54h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta" unique_id=1016739491]
+position = Vector2(-1112, -1229.5)
+shape = SubResource("RectangleShape2D_mq54h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Puerta/CollisionShape2D" unique_id=31888269]
+position = Vector2(1.4999999, 2.2888184e-05)
+scale = Vector2(1.1796875, 1.0390629)
 texture = ExtResource("5_kg8wq")
 hframes = 8
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1016739491]
-position = Vector2(-0.5, 0.5)
-shape = SubResource("RectangleShape2D_35if1")
-
-[node name="PointLight2D" type="PointLight2D" parent="Sprite2D" unique_id=1755164526]
-position = Vector2(2.2500222, 4.9999933)
+[node name="PointLight2D" type="PointLight2D" parent="Puerta/CollisionShape2D/Sprite2D" unique_id=1755164526]
+position = Vector2(2.193451e-05, 1.4436021)
 scale = Vector2(9.244792, 9.479167)
 energy = 1.5
 texture = SubResource("GradientTexture2D_35if1")
 texture_scale = 0.3
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1923824134]
+[node name="StaticBody2D" type="StaticBody2D" parent="Puerta" unique_id=171992951]
+position = Vector2(-1115, -1232)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta/StaticBody2D" unique_id=489679953]
+position = Vector2(1, 1.25)
+shape = SubResource("RectangleShape2D_eyaee")
+
+[node name="hud" type="CanvasLayer" parent="." unique_id=1209379366]
+script = ExtResource("10_mq54h")
+
+[node name="LabelTiempo" type="Label" parent="hud" unique_id=113908732]
 visible = false
-color = Color(0, 0, 0, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -166.17126
+offset_right = 166.17126
+offset_bottom = 188.71484
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6422353, 0.16072667, 0.1413891, 1)
+theme_override_font_sizes/font_size = 55
+text = "30.00"
 
 [connection signal="body_entered" from="Torch2/Area2D" to="Torch2/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Llave" to="Llave" method="_on_body_entered"]
+[connection signal="body_entered" from="Puerta" to="Puerta" method="_on_body_entered"]
