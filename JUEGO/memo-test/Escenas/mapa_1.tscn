@@ -446,7 +446,7 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eyaee"]
-size = Vector2(98, 133.5)
+size = Vector2(84, 120)
 
 [node name="Mapa1" type="Node2D" unique_id=639666208]
 
@@ -519,7 +519,7 @@ texture_scale = 0.3
 position = Vector2(-1115, -1232)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta/StaticBody2D" unique_id=489679953]
-position = Vector2(1, 1.25)
+position = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_eyaee")
 
 [node name="hud" type="CanvasLayer" parent="." unique_id=1209379366]
